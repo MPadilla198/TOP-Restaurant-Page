@@ -1,5 +1,5 @@
 export default Contact = (() => {
-    function  render() {
+    function  render(container) {
 
     };
 
