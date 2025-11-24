@@ -1,9 +1,15 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 32px;
+}
+
 body {
     margin: 0;
     background-image: url("cloud_wallpaper.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     height: 100vh;
     border: none;
@@ -11,6 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-bottom: 32px;
 }
 
 header>nav {
@@ -18,13 +26,15 @@ header>nav {
     justify-content: center;
     gap: 32px;
 
-    padding: 16px;
+    padding: 32px;
 }
 
-header>nav>button {
+button {
     border: none;
     background-color: #b7ddf4;
     border-radius: 8px;
+
+    width: fit-content;
 
     padding: 8px 16px;
 }
@@ -34,6 +44,7 @@ div#content {
     border: solid #b7ddf4;
 
     width: 60%;
+    padding: 16px;
 
     border-radius: 16px;
 
@@ -45,3 +56,30 @@ div#content {
 .page-title {
 
 }
+
+div#content h2 {
+    margin-bottom: 0;
+}
+
+div#content p+p {
+    margin-top: 0;
+}
+
+div#content form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+div#content input, div#content textarea {
+    margin: 8px;
+    border: none;
+    background-color: #b7ddf4;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+div#content button {
+    margin: 0 auto;
+}
+    
