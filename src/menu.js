@@ -1,4 +1,4 @@
-export default Menu = (() => {
+export default (() => {
     function  render(container) {
 
     };

@@ -1,4 +1,4 @@
-export default Home = (() => {
+export default (() => {
     function  render(container) {
 
     };
