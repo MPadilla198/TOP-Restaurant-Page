@@ -1,9 +1,24 @@
+body {
+    margin: 0;
+    background-image: url("cloud_wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh);
+    border: none;
+}
+
 header>nav {
     display: flex;
     justify-content: center;
     gap: 32px;
+
+    padding: 16px;
 }
 
-header>nav>button {
+header>nav>button {}
+
+div#content {
     
 }
