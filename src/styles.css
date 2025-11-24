@@ -5,8 +5,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: calc(100vh);
+    height: 100vh;
     border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header>nav {
@@ -17,8 +21,27 @@ header>nav {
     padding: 16px;
 }
 
-header>nav>button {}
+header>nav>button {
+    border: none;
+    background-color: #b7ddf4;
+    border-radius: 8px;
+
+    padding: 8px 16px;
+}
 
 div#content {
-    
+    background-color: #ffffff;
+    border: solid #b7ddf4;
+
+    width: 60%;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+
 }

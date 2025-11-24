@@ -23,7 +23,7 @@ Home.render();
 document.querySelector('#home').addEventListener('click', () => {
     if (currentPage !== Pages.HOME) {   
         resetContent();
-        Home.render(content);
+        Home.render();
 
         currentPage = Pages.HOME
     }
@@ -32,7 +32,7 @@ document.querySelector('#home').addEventListener('click', () => {
 document.querySelector('#menu').addEventListener('click', () => {
     if (currentPage !== Pages.MENU) {
         resetContent();
-        Menu.render(content);
+        Menu.render();
 
         currentPage = Pages.Menu;
     }
@@ -41,7 +41,7 @@ document.querySelector('#menu').addEventListener('click', () => {
 document.querySelector('#contact').addEventListener('click', () => {
     if (currentPage !== Pages.CONTACT) {
         resetContent();
-        Contact.render(content);
+        Contact.render();
 
         currentPage = Pages.CONTACT;
     }
