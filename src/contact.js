@@ -60,6 +60,9 @@ export default (() => {
         contactForm.appendChild(formMessageInput);
         const submitFormButton = document.createElement('button');
         submitFormButton.textContent = 'Send Message';
+        submitFormButton.addEventListener('click', (event) => {
+            event.preventDefault();
+        })
         contactForm.appendChild(submitFormButton);
         content.appendChild(contactForm);
     };
