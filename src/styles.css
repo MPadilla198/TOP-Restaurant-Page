@@ -87,4 +87,22 @@ div#content input, div#content textarea {
 div#content button {
     margin: 0 auto;
 }
-    
+
+h3.menu-item {
+    margin-bottom: 0;
+}
+
+p.menu-item {
+    text-align: center;
+    margin: 4px 0;
+    max-inline-size: 60ch;
+}
+
+h4.menu-item {
+    margin-top: 0;
+}
+
+hr {
+    flex-grow: 1;
+    width: 60%;
+}
