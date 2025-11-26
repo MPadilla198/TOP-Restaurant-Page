@@ -88,7 +88,6 @@ export default (() => {
     function render() {
         // Title
         const title = document.createElement('h1');
-        title.classList.add('page-title')
         title.textContent = 'Sky Cafe\'s Menu';
         content.appendChild(title)
 
@@ -100,7 +99,7 @@ export default (() => {
             addMenuItem(item);
         }
 
-        content.appendChild(document.createElement('hr'))
+        content.appendChild(document.createElement('hr'));
 
         // Drinks
         const drinksTitle = document.createElement('h2');

@@ -1,11 +1,11 @@
 export default (() => {
     const content = document.querySelector('#content');
     const hours = ['Sunday: 8am - 8pm', 'Monday: 6am - 6pm', 'Tuesday: 6am - 6pm', 'Wednesday: 6am - 6pm', 'Thursday: 6am - 6pm', 'Friday: 6am - 10pm', 'Saturday: 8am - 10pm',];
+    const locationLines = ['12345 Main Street', 'Fort Worth, TX', '00000-0000']
 
     function render() {
         // Title
         const title = document.createElement('h1');
-        title.classList.add('page-title')
         title.textContent = 'Contact Sky Cafe';
         content.appendChild(title)
 
@@ -23,9 +23,11 @@ export default (() => {
         const locationTitle = document.createElement('h2');
         locationTitle.textContent = 'Location';
         content.appendChild(locationTitle);
-        const location = document.createElement('p');
-        location.textContent = '12345 Main St., Fort Worth, TX';
-        content.appendChild(location);
+        for (const line of locationLines) {
+            const location = document.createElement('p');
+            location.textContent = line;
+            content.appendChild(location);
+        }
 
         // Contact phone numbers
         const phoneTitle = document.createElement('h2');
