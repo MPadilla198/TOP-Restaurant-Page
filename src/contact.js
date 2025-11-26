@@ -41,6 +41,14 @@ export default (() => {
         ownerPhone.textContent = 'Owner: (555) 555-5555';
         content.appendChild(ownerPhone);
 
+        // Email
+        const emailTitle = document.createElement('h2');
+        emailTitle.textContent = 'Email';
+        content.appendChild(emailTitle);
+        const email = document.createElement('p');
+        email.textContent = 'support@skycafe.com';
+        content.appendChild(email);
+
         // Form submission
         const contactFormTitle = document.createElement('h2');
         contactFormTitle.textContent = 'Send us a message!';
